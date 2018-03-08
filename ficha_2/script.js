@@ -1,5 +1,6 @@
-function inverte(string){
-    stringLength=string.length;
+function inverte(){
+    var string = "Francisco Perez";
+    var stringLength=string.length;
     var invertido = "";
     for (i=stringLength-1; i<=0 ; i--){
         invertido += string[i];
@@ -8,7 +9,7 @@ function inverte(string){
 }
 
 function main(){
-    inverte("Ola Francisco");
+    inverte();
 }
 
 //Inline
