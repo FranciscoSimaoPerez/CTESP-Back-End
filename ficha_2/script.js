@@ -2,14 +2,15 @@ function inverte(){
     var string = "Francisco Perez";
     var stringLength=string.length;
     var invertido = "";
-    for (i=stringLength-1; i<=0 ; i--){
+    for (i=stringLength-1; i>=0 ; i--){
         invertido += string[i];
     }
-    console.log(invertido);
+    return invertido;
 }
 
 function main(){
-    inverte();
+    var a = inverte();
+    console.log(a);
 }
 
 //Inline
