@@ -97,11 +97,44 @@ function soma100(){
     
 }
 
+function maximo(nums){
+    var max = nums[0];
+    arrayLength=nums.length;
+    for (i = 1; i <= arrayLength; i++){
+        if (max < nums[i]){
+            max = nums[i];
+        }
+    }
+    return max;
+}
+
+function minimo(nums){
+    var min = nums[0];
+    arrayLength=nums.length;
+    for (i = 1; i <= arrayLength; i++){
+        if (min > nums[i]){
+            min = nums[i];
+        }
+    }
+    return min;
+}
+
+function media(nums){
+    var arrayLength=nums.length;
+    var soma = 0;
+    for (i = 0; i < arrayLength; i++){
+        soma = soma + nums[i];
+    }
+    calcMedia = soma / arrayLength;
+    return calcMedia;
+}
+
 function main(){
     var nota_1 = 5;
     var nota_2 = 10;
     var nota_3 = 15; 
-    media(nota_1, nota_2, nota_3);
+    var arrayNumeros = [5, 3, 34, 12, 79, 2, 4 ,11];
+    
     nMes(1);
     nMes(2);
     nMes(3);
@@ -117,6 +150,9 @@ function main(){
     calculadora(15,15,"^");
     console.log(multiplos5());
     console.log(soma100());
+    console.log(maximo(arrayNumeros));
+    console.log(minimo(arrayNumeros));
+    console.log(media(arrayNumeros));
 }
 //Inline
 main();
