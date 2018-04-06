@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function media(nota_1, nota_2, nota_3) {
    
     var media = nota_1*0.3 + nota_2*0.3 + nota_3*0.4;
@@ -157,7 +156,7 @@ function main(){
 }
 //Inline
 main();
-=======
+
 function media(nota_1, nota_2, nota_3) {
    
     var media = nota_1*0.3 + nota_2*0.3 + nota_3*0.4;
@@ -316,4 +315,4 @@ function main(){
 }
 //Inline
 main();
->>>>>>> 3b5083a2c3ee030828ee3a2145c6ac4a0187c1a0
+
