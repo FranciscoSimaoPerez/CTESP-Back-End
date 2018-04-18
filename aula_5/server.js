@@ -1,12 +1,13 @@
-// import express module
+// import modules
 const express = require('express');
 const bodyParser = require('body-parser');
+const fs = require('fs');
 //create express instance
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 
-var fs = require('fs');
+
 
 var fileContent = fs.readFileSync("./persons.json", 'utf-8');
 
