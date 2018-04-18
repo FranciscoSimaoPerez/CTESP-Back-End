@@ -14,18 +14,19 @@ var server = app.listen(3000, () => console.log('Listening on port 3000!'));
 
 //Função que lê ficheiros
 function readFile(fileName){
-    var file = fs.readFileSync(fileName, 'utf-8');
+    var data = fs.readFileSync(fileName, 'utf-8');
+    var file = JSON.parse(data, null, 2);
     return file;
 }
 
 //Pedido GET que pede para listar todos os videos do ficheiro
 app.get('/listVideos', function(request, response, next){
+    var file = readFile('./videos.json');
     response.send(file);
 });
 
 app.get('/addVideo', function(request, response){
-    var rawData = readFile('./videos.json');
-    var data = JSON.parse(rawData);
+     
 });
 
 /*
