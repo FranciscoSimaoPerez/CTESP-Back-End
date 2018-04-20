@@ -3,8 +3,6 @@ var app = express();
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var uuidv1 = require('uuid/v1');
-var rawFileData = fs.readFileSync('./videos.json', 'utf-8');
-var FileData = JSON.parse(rawFileData);
 
 app.get('/', (request, response) => response.send('Página Inicial'));
 
@@ -14,8 +12,7 @@ var server = app.listen(3000, () => console.log('Listening on port 3000!'));
 
 //Função que lê ficheiros
 function readFile(fileName){
-    var data = fs.readFileSync(fileName, 'utf-8');
-    var file = JSON.parse(data, null, 2);
+    var file = fs.readFileSync(fileName, 'utf-8');
     return file;
 }
 
@@ -25,33 +22,27 @@ app.get('/listVideos', function(request, response, next){
     response.send(file);
 });
 
-app.get('/addVideo', function(request, response){
-     
-});
-
-/*
-app.get('/addVideo', function(request, response){
-    let novoVideo =
-    {
-        id: uuidv1(),
-        Uploader:"Josefina",
-        Title:"lul",
-        Description:"Meme review",
-        Length:"11:00",
-        URL:"https://www.youtube.com/watch?v=Xgm_QaQqJvI&t=2650s",
-        Views:"1000000",
-        Comments:"['lul ur mom', 'nice']",
-        Tags:"['Fun', 'OMG']"
-    };
+app.post('/addVideo', function(request, response){
     var file = readFile('./videos.json');
-    data = JSON.stringify(novoVideo, null, 2);
-    file = file + data;  
-    fs.writeFile('videos.json', file, (err) => {  
-        if (err) throw err;
-        response.send('Video Adicionado com sucesso');
-    });
+
+    //Converte JSON String para um objecto em Javascript
+    var jsonData = JSON.parse(file);
+    
+    var size = Object.keys(jsonData).length;
+    var num = ++size;
+    var video = request.body;
+    console.log(video);
+    video.Id=uuidv1();
+    jsonData["video"+num] = video;
+    var jsonStringify = JSON.stringify(video, null, 2);
+    fs.appendFile('./videos.json', jsonStringify, finished);
+
+    function finished(err){
+        console.log('very nice');
+    }
+
+    response.send(file);
 });
-*/
 
 app.delete('/deleteVideo', function(request, response){
     response.send("Delete Video");
