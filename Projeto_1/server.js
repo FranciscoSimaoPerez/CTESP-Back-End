@@ -19,12 +19,12 @@ function readFile(fileName){
 //Pedido GET que pede para listar todos os videos do ficheiro
 app.get('/listVideos', function(request, response, next){
     var file = readFile('./videos.json');
-    response.send(file);
+    var jsonFile = JSON.parse(file);
+    response.send(jsonFile);
 });
 
 app.post('/addVideo', function(request, response){
     var file = readFile('./videos.json');
-
     //Converte JSON String para um objecto em Javascript
     var jsonData = JSON.parse(file);
     
@@ -34,14 +34,14 @@ app.post('/addVideo', function(request, response){
     console.log(video);
     video.Id=uuidv1();
     jsonData["video"+num] = video;
-    var jsonStringify = JSON.stringify(video, null, 2);
-    fs.appendFile('./videos.json', jsonStringify, finished);
+    var jsonStringify = JSON.stringify(jsonData, null, 2);
+    fs.writeFile('./videos.json', jsonStringify, finished);
 
     function finished(err){
         console.log('very nice');
     }
 
-    response.send(file);
+    response.end(jsonStringify);
 });
 
 app.delete('/deleteVideo', function(request, response){
