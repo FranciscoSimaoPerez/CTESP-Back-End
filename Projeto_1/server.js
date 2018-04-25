@@ -83,3 +83,38 @@ app.get('/listVideos/:id', function(request, response){
     }
     response.send(selectedVideo);
 });
+
+app.get('/listUploader/:Uploader', function(request, response){
+    var file = readFile('./videos.json');
+    var jsonData = JSON.parse(file); 
+    var uploader = request.params.Uploader; 
+    var size = Object.keys(jsonData).length;
+    var videos = [];
+    for (var i = 1; i <= size; i++){
+        if (jsonData["video"+i].Uploader == uploader){
+            videos = videos + JSON.stringify(jsonData["video"+i],null,4);
+        }
+    }
+    console.log("Videos de "+ uploader +"!");
+    response.send(videos);
+});
+
+app.get('/AddView/:id', function(request, response){
+    var file = readFile('./videos.json');
+    var jsonData = JSON.parse(file); 
+    var idVideo = request.params.id; 
+    var size = Object.keys(jsonData).length;
+    for (var i = 1; i <= size; i++){
+        if (jsonData["video"+i].Id == idVideo){
+            console.log(jsonData["video"+i].Views);
+            jsonData["video"+i].Views++;
+            jsonStringify = JSON.stringify(jsonData["video"+i].Views, null, 2);
+            console.log(jsonData["video"+i].Views);
+            fs.appendFile('./videos.json', jsonStringify, finished);
+            function finished(err){
+                console.log(jsonData["video"+i].Views);
+            }
+        }
+    }
+    response.send(jsonStringify);
+});
