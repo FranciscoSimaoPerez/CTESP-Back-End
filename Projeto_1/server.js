@@ -17,7 +17,7 @@ function readFile(fileName){
 }
 
 //Pedido GET que pede para listar todos os videos do ficheiro
-app.get('/listVideos', function(request, response, next){
+app.get('/listVideos', function(request, response){
     var file = readFile('./videos.json');
     var jsonFile = JSON.parse(file);
     response.send(jsonFile);
@@ -27,7 +27,6 @@ app.post('/addVideo', function(request, response){
     var file = readFile('./videos.json');
     //Converte JSON String para um objecto em Javascript
     var jsonData = JSON.parse(file);
-    
     var size = Object.keys(jsonData).length;
     var num = ++size;
     var video = request.body;
@@ -36,18 +35,51 @@ app.post('/addVideo', function(request, response){
     jsonData["video"+num] = video;
     var jsonStringify = JSON.stringify(jsonData, null, 2);
     fs.writeFile('./videos.json', jsonStringify, finished);
-
     function finished(err){
-        console.log('very nice');
+        console.log("O Video "+ video.Title + " de "+ video.Uploader +" foi adicionado!");
     }
-
     response.end(jsonStringify);
 });
 
 app.delete('/deleteVideo', function(request, response){
-    response.send("Delete Video");
+    var file = readFile('./videos.json');
+    var jsonData = JSON.parse(file); 
+    var idVideo = request.body.Id; 
+    var size = Object.keys(jsonData).length;
+    var eliminado = false; // variável que guarda se o objeto foi apagado
+    //console.log(idVideo); 
+    if (!idVideo){ // Caso não seja colocado o Id é apresentada uma mensagem
+        console.log("É necessário o Id do video a eliminar!");
+    }
+    else{
+        for (var i = 1; i <= size; i++){
+            if (jsonData["video"+i].Id == idVideo){
+                delete jsonData["video"+i];
+                var jsonStringify = JSON.stringify(jsonData, null, 2);
+                fs.writeFileSync('./videos.json', jsonStringify); 
+                eliminado = true;
+                response.send(jsonStringify);
+            }
+        }
+        if (eliminado == true){
+            console.log("O Video com o Id '"+ idVideo +"' foi eliminado!");
+        }
+        else {
+            console.log("Não existe o video com esse Id");
+        }  
+    }
+    
 });
 
-
-
-
+app.get('/listVideos/:id', function(request, response){
+    var file = readFile('./videos.json');
+    var jsonData = JSON.parse(file); 
+    var idVideo = request.params.id; 
+    var size = Object.keys(jsonData).length;
+    for (var i = 1; i <= size; i++){
+        if (jsonData["video"+i].Id == idVideo){
+            var selectedVideo = jsonData["video"+i];
+        }
+    }
+    response.send(selectedVideo);
+});
