@@ -143,11 +143,12 @@ app.get('/AddView/:id', function(request, response){
     }
 });
 
-app.get('/listOrdenatedVideos', function(request, response){
+app.get('/listAscVideos', function(request, response){
     var file = readFile('./videos.json');
     var jsonData = JSON.parse(file);
     var size = Object.keys(jsonData).length;
     var minIdx, temp;
+    //Algoritmo Selection Sort usado para ordenar os videos por views
     for(var i = 1; i <= size; i++){
         minIdx = i;
         for(var j = i+1; j<=size; j++){
@@ -158,6 +159,27 @@ app.get('/listOrdenatedVideos', function(request, response){
         temp = jsonData["video"+i];
         jsonData["video"+i] = jsonData["video"+minIdx];
         jsonData["video"+minIdx] = temp;
+    }
+    //jsonStringify = JSON.stringify(jsonData, null, 2);
+    response.send(jsonData);
+});
+
+app.get('/listDescVideos', function(request, response){
+    var file = readFile('./videos.json');
+    var jsonData = JSON.parse(file);
+    var size = Object.keys(jsonData).length;
+    var maxIdx, temp;
+    //Algoritmo Selection Sort usado para ordenar os videos por views
+    for(var i = 1; i <= size; i++){
+        maxIdx = i;
+        for(var j = i+1; j<=size; j++){
+            if(jsonData["video"+j].Views > jsonData["video"+maxIdx].Views){
+                maxIdx = j;
+            }
+        }
+        temp = jsonData["video"+i];
+        jsonData["video"+i] = jsonData["video"+maxIdx];
+        jsonData["video"+maxIdx] = temp;
     }
     //jsonStringify = JSON.stringify(jsonData, null, 2);
     response.send(jsonData);
