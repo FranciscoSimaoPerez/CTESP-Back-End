@@ -99,6 +99,30 @@ app.get('/listUploader/:Uploader', function(request, response){
     response.send(videos);
 });
 
+app.post('/postComment', function(request, response){
+    var file = readFile('./videos.json');
+    var jsonData = JSON.parse(file); 
+    var idVideo = request.body.Id; 
+    var commentVideo = request.body.Comment;
+    var size = Object.keys(jsonData).length;
+    if (!idVideo){ // Caso não seja colocado o Id é apresentada uma mensagem
+        console.log("É necessário o Id do video a eliminar!");
+    }
+    else{
+        for (var i = 1; i <= size; i++){
+            if (jsonData["video"+i].Id == idVideo){
+                jsonData["video"+i].Comments.push(commentVideo);
+            }
+        }
+        var jsonStringify = JSON.stringify(jsonData, null, 2);
+        fs.writeFile('./videos.json', jsonStringify, finished); 
+        function finished(err){
+            console.log("Comentário adicionado!");
+            response.send(jsonStringify);    
+        }
+    }
+});
+
 app.get('/AddView/:id', function(request, response){
     var file = readFile('./videos.json');
     var jsonData = JSON.parse(file); 
@@ -106,15 +130,35 @@ app.get('/AddView/:id', function(request, response){
     var size = Object.keys(jsonData).length;
     for (var i = 1; i <= size; i++){
         if (jsonData["video"+i].Id == idVideo){
-            console.log(jsonData["video"+i].Views);
+            var saveID = i;
+            //console.log(jsonData["video"+i].Views);
             jsonData["video"+i].Views++;
-            jsonStringify = JSON.stringify(jsonData["video"+i].Views, null, 2);
-            console.log(jsonData["video"+i].Views);
-            fs.appendFile('./videos.json', jsonStringify, finished);
-            function finished(err){
-                console.log(jsonData["video"+i].Views);
-            }
         }
     }
-    response.send(jsonStringify);
+    jsonStringify = JSON.stringify(jsonData, null, 2);
+    fs.writeFile('./videos.json', jsonStringify, finished);
+    function finished(err){
+        console.log("O video "+ jsonData["video"+saveID].Title +" agora tem " + jsonData["video"+saveID].Views + " views!");
+        response.send("O video "+ jsonData["video"+saveID].Title +" agora tem " + jsonData["video"+saveID].Views + " views!");
+    }
+});
+
+app.get('/listOrdenatedVideos', function(request, response){
+    var file = readFile('./videos.json');
+    var jsonData = JSON.parse(file);
+    var size = Object.keys(jsonData).length;
+    var minIdx, temp;
+    for(var i = 1; i <= size; i++){
+        minIdx = i;
+        for(var j = i+1; j<=size; j++){
+            if(jsonData["video"+j].Views < jsonData["video"+minIdx].Views){
+                minIdx = j;
+            }
+        }
+        temp = jsonData["video"+i];
+        jsonData["video"+i] = jsonData["video"+minIdx];
+        jsonData["video"+minIdx] = temp;
+    }
+    //jsonStringify = JSON.stringify(jsonData, null, 2);
+    response.send(jsonData);
 });

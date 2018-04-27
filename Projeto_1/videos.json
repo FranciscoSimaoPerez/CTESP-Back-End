@@ -6,9 +6,19 @@
     "Description": "Stream/live of the game Need for Speed Underground 2",
     "Length": "50:29",
     "URL": "https://www.youtube.com/watch?v=Xgm_QaQqJvI&t=2650s",
-    "Views": "5",
-    "Comments": "['lul ur mom', 'nice']",
-    "Tags": "['Fun', 'OMG']"
+    "Views": 15,
+    "Comments": [
+      [
+        "Gosto!"
+      ],
+      [
+        "lul"
+      ]
+    ],
+    "Tags": [
+      "Fun",
+      "OMG"
+    ]
   },
   "video2": {
     "Id": 2,
@@ -18,8 +28,11 @@
     "Length": "50:29",
     "URL": "https://www.youtube.com/watch?v=Xgm_QaQqJvI&t=2650s",
     "Views": "5",
-    "Comments": "['lul ur mom', 'nice']",
-    "Tags": "['Fun', 'OMG']"
+    "Comments": [],
+    "Tags": [
+      "Fun",
+      "OMG"
+    ]
   },
   "video3": {
     "Id": 3,
@@ -29,8 +42,11 @@
     "Length": "50:29",
     "URL": "https://www.youtube.com/watch?v=Xgm_QaQqJvI&t=2650s",
     "Views": "5",
-    "Comments": "['lul ur mom', 'nice']",
-    "Tags": "['Fun', 'OMG']"
+    "Comments": [],
+    "Tags": [
+      "Fun",
+      "OMG"
+    ]
   },
   "video4": {
     "Id": "44892fe0-4813-11e8-9ab9-a9c59fd2ad4e",
@@ -40,7 +56,10 @@
     "Length": "50:29",
     "URL": "https://www.youtube.com/watch?v=Xgm_QaQqJvI&t=2650s",
     "Views": "5",
-    "Comments": "['lul ur mom', 'nice']",
-    "Tags": "['Fun', 'OMG']"
+    "Comments": [],
+    "Tags": [
+      "Fun",
+      "OMG"
+    ]
   }
 }
