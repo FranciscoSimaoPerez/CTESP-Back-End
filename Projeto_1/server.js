@@ -96,7 +96,7 @@ app.get('/listUploader/:Uploader', function(request, response){
         }
     }
     console.log("Videos de "+ uploader +"!");
-    response.send(videos);
+    response.send(JSON.parse(videos));
 });
 
 app.post('/postComment', function(request, response){
@@ -148,7 +148,7 @@ app.get('/listAscVideos', function(request, response){
     var jsonData = JSON.parse(file);
     var size = Object.keys(jsonData).length;
     var minIdx, temp;
-    //Algoritmo Selection Sort usado para ordenar os videos por views
+    //Algoritmo Selection Sort usado para ordenar os videos por views em ordem crescente
     for(var i = 1; i <= size; i++){
         minIdx = i;
         for(var j = i+1; j<=size; j++){
@@ -169,7 +169,7 @@ app.get('/listDescVideos', function(request, response){
     var jsonData = JSON.parse(file);
     var size = Object.keys(jsonData).length;
     var maxIdx, temp;
-    //Algoritmo Selection Sort usado para ordenar os videos por views
+    //Algoritmo Selection Sort usado para ordenar os videos por views em ordem decrescente
     for(var i = 1; i <= size; i++){
         maxIdx = i;
         for(var j = i+1; j<=size; j++){
