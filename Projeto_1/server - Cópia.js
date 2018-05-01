@@ -27,12 +27,14 @@ app.post('/addVideo', function(request, response){
     var file = readFile('./videos.json');
     //Converte JSON String para um objecto em Javascript
     var jsonData = JSON.parse(file);
+    var size = Object.keys(jsonData).length;
+    var num = ++size;
     var video = request.body;
     console.log(video);
     video.Views=0;
     video.Comments=[];
     video.Id=uuidv1();
-    jsonData["video"+video.Id] = video;
+    jsonData["video"+num] = video;
     var jsonStringify = JSON.stringify(jsonData, null, 2);
     fs.writeFile('./videos.json', jsonStringify, finished);
     function finished(err){
@@ -45,34 +47,42 @@ app.delete('/deleteVideo', function(request, response){
     var file = readFile('./videos.json');
     var jsonData = JSON.parse(file); 
     var idVideo = request.body.Id; 
+    var size = Object.keys(jsonData).length;
     var eliminado = false; // variável que guarda se o objeto foi apagado
     //console.log(idVideo); 
     if (!idVideo){ // Caso não seja colocado o Id é apresentada uma mensagem
         console.log("É necessário o Id do video a eliminar!");
     }
     else{
-        if (jsonData["video"+idVideo].Id == idVideo){
-            delete jsonData["video"+i];
-            var jsonStringify = JSON.stringify(jsonData, null, 2);
-            fs.writeFileSync('./videos.json', jsonStringify); 
-            eliminado = true;
-            response.send(jsonStringify);
+        for (var i = 1; i <= size; i++){
+            if (jsonData["video"+i].Id == idVideo){
+                delete jsonData["video"+i];
+                var jsonStringify = JSON.stringify(jsonData, null, 2);
+                fs.writeFileSync('./videos.json', jsonStringify); 
+                eliminado = true;
+                response.send(jsonStringify);
+            }
         }
+        if (eliminado == true){
+            console.log("O Video com o Id '"+ idVideo +"' foi eliminado!");
+        }
+        else {
+            console.log("Não existe o video com esse Id");
+        }  
     }
-    if (eliminado == true){
-        console.log("O Video com o Id '"+ idVideo +"' foi eliminado!");
-    }
-    else {
-        console.log("Não existe o video com esse Id");
-    }  
     
 });
 
-app.get('/video/:id', function(request, response){
+app.get('/listVideos/:id', function(request, response){
     var file = readFile('./videos.json');
     var jsonData = JSON.parse(file); 
     var idVideo = request.params.id; 
-    var selectedVideo = jsonData["video"+idVideo];
+    var size = Object.keys(jsonData).length;
+    for (var i = 1; i <= size; i++){
+        if (jsonData["video"+i].Id == idVideo){
+            var selectedVideo = jsonData["video"+i];
+        }
+    }
     response.send(selectedVideo);
 });
 
@@ -80,14 +90,15 @@ app.get('/listUploader/:Uploader', function(request, response){
     var file = readFile('./videos.json');
     var jsonData = JSON.parse(file); 
     var uploader = request.params.Uploader; 
+    var size = Object.keys(jsonData).length;
     var videos = [];
-    for (var video in jsonData){
-        if (jsonData[video].Uploader == uploader){
-            videos = videos + JSON.stringify(jsonData[video],null,4);
+    for (var i = 1; i <= size; i++){
+        if (jsonData["video"+i].Uploader == uploader){
+            videos = videos + JSON.stringify(jsonData["video"+i],null,4);
         }
     }
     console.log("Videos de "+ uploader +"!");
-    response.send(videos);
+    response.send(JSON.parse(videos));
 });
 
 app.post('/postComment', function(request, response){
@@ -95,30 +106,21 @@ app.post('/postComment', function(request, response){
     var jsonData = JSON.parse(file); 
     var idVideo = request.body.Id; 
     var commentVideo = request.body.Comment;
-    var commented = false;
+    var size = Object.keys(jsonData).length;
     if (!idVideo){ // Caso não seja colocado o Id é apresentada uma mensagem
         console.log("É necessário o Id do video a eliminar!");
     }
     else{
-        for (var video in jsonData){
-            if (jsonData[video].Id == idVideo){
-                console.log(jsonData[video]);
-                jsonData[video].Comments.push(commentVideo);
-                var commentedVideo =  jsonData[video]
-                commented = true;
+        for (var i = 1; i <= size; i++){
+            if (jsonData["video"+i].Id == idVideo){
+                jsonData["video"+i].Comments.push(commentVideo);
             }
         }
         var jsonStringify = JSON.stringify(jsonData, null, 2);
         fs.writeFile('./videos.json', jsonStringify, finished); 
         function finished(err){
-            if (commented == true){
-                console.log("Comentário adicionado!");
-                response.send(commentedVideo);    
-            }
-            else{
-                console.log("O video não existe");
-                response.send("O video não existe");
-            }
+            console.log("Comentário adicionado!");
+            response.send(jsonStringify);    
         }
     }
 });
@@ -127,71 +129,60 @@ app.get('/AddView/:id', function(request, response){
     var file = readFile('./videos.json');
     var jsonData = JSON.parse(file); 
     var idVideo = request.params.id; 
-    var addedView = false;
-    if (jsonData["video"+idVideo].Id == idVideo){
-        //console.log(jsonData["video"+i].Views);
-        jsonData["video"+idVideo].Views++;
-        addedView = true;
+    var size = Object.keys(jsonData).length;
+    for (var i = 1; i <= size; i++){
+        if (jsonData["video"+i].Id == idVideo){
+            var saveID = i;
+            //console.log(jsonData["video"+i].Views);
+            jsonData["video"+i].Views++;
+        }
     }
     jsonStringify = JSON.stringify(jsonData, null, 2);
     fs.writeFile('./videos.json', jsonStringify, finished);
     function finished(err){
-        if (addedView == true){
-            console.log("O video "+ jsonData["video"+idVideo].Title +" agora tem " + jsonData["video"+idVideo].Views + " views!");
-            response.send("O video "+ jsonData["video"+idVideo].Title +" agora tem " + jsonData["video"+idVideo].Views + " views!");
-        }
-        else {
-            console.log("O video não existe");
-            response.send("O video não existe");
-        }
+        console.log("O video "+ jsonData["video"+saveID].Title +" agora tem " + jsonData["video"+saveID].Views + " views!");
+        response.send("O video "+ jsonData["video"+saveID].Title +" agora tem " + jsonData["video"+saveID].Views + " views!");
     }
 });
 
 app.get('/listAscVideos', function(request, response){
     var file = readFile('./videos.json');
     var jsonData = JSON.parse(file);
+    var size = Object.keys(jsonData).length;
     var minIdx, temp;
-    var arrayVideos = [];
-    //Armazena os nomes de todos os objetos
-    for (var video in jsonData){
-        arrayVideos.push(video);
-    }
     //Algoritmo Selection Sort usado para ordenar os videos por views em ordem crescente
-    for(var i = 0; i < arrayVideos.length; i++){
+    for(var i = 1; i <= size; i++){
         minIdx = i;
-        for(var j = i+1; j< arrayVideos.length; j++){
-            if(jsonData[arrayVideos[j]].Views < jsonData[arrayVideos[minIdx]].Views){
+        for(var j = i+1; j<=size; j++){
+            if(jsonData["video"+j].Views < jsonData["video"+minIdx].Views){
                 minIdx = j;
             }
         }
-        temp = jsonData[arrayVideos[i]];
-        jsonData[arrayVideos[i]] = jsonData[arrayVideos[minIdx]];
-        jsonData[arrayVideos[minIdx]] = temp;
+        temp = jsonData["video"+i];
+        jsonData["video"+i] = jsonData["video"+minIdx];
+        jsonData["video"+minIdx] = temp;
     }
-    
+    //jsonStringify = JSON.stringify(jsonData, null, 2);
     response.send(jsonData);
 });
 
 app.get('/listDescVideos', function(request, response){
     var file = readFile('./videos.json');
     var jsonData = JSON.parse(file);
+    var size = Object.keys(jsonData).length;
     var maxIdx, temp;
-    var arrayVideos = [];
-    //Armazena os nomes de todos os objetos
-    for (var video in jsonData){
-        arrayVideos.push(video);
-    }
     //Algoritmo Selection Sort usado para ordenar os videos por views em ordem decrescente
-    for(var i = 0; i < arrayVideos.length; i++){
+    for(var i = 1; i <= size; i++){
         maxIdx = i;
-        for(var j = i+1; j< arrayVideos.length; j++){
-            if(jsonData[arrayVideos[j]].Views > jsonData[arrayVideos[maxIdx]].Views){
+        for(var j = i+1; j<=size; j++){
+            if(jsonData["video"+j].Views > jsonData["video"+maxIdx].Views){
                 maxIdx = j;
             }
         }
-        temp = jsonData[arrayVideos[i]];
-        jsonData[arrayVideos[i]] = jsonData[arrayVideos[maxIdx]];
-        jsonData[arrayVideos[maxIdx]] = temp;
+        temp = jsonData["video"+i];
+        jsonData["video"+i] = jsonData["video"+maxIdx];
+        jsonData["video"+maxIdx] = temp;
     }
+    //jsonStringify = JSON.stringify(jsonData, null, 2);
     response.send(jsonData);
 });
