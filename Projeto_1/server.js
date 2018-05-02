@@ -101,7 +101,7 @@ app.post('/postComment', function(request, response){
     var commentVideo = request.body.Comment;
     var commented = false;
     if (!idVideo){ // Caso não seja colocado o Id é apresentada uma mensagem
-        response.send("É necessário o Id do video a eliminar!");
+        response.send("É necessário o Id do video a comentar!");
     }
     else{
         for (var video in jsonData){ //percorre o jsonData
