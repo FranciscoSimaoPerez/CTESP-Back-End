@@ -153,48 +153,29 @@ app.get('/AddView/:id', function(request, response){
 app.get('/listAscVideos', function(request, response){
     var file = readFile('./videos.json');
     var jsonData = JSON.parse(file);
-    var minIdx, temp;
     var arrayVideos = [];
     //Armazena os nomes de todos os objetos
     for (var video in jsonData){
-        arrayVideos.push(video);
+        arrayVideos.push(jsonData[video]);
     }
-    //Algoritmo Selection Sort usado para ordenar os videos por views em ordem crescente
-    for(var i = 0; i < arrayVideos.length; i++){
-        minIdx = i;
-        for(var j = i+1; j< arrayVideos.length; j++){
-            if(jsonData[arrayVideos[j]].Views < jsonData[arrayVideos[minIdx]].Views){
-                minIdx = j;
-            }
-        }
-        temp = jsonData[arrayVideos[i]];
-        jsonData[arrayVideos[i]] = jsonData[arrayVideos[minIdx]];
-        jsonData[arrayVideos[minIdx]] = temp;
-    }
-    
-    response.send(jsonData);
+    //Ordena o array por ordem crescente de views
+    arrayVideos.sort(function(a, b) {
+        return a.Views - b.Views;
+      });
+    response.send(arrayVideos);
 });
 
 app.get('/listDescVideos', function(request, response){
     var file = readFile('./videos.json');
     var jsonData = JSON.parse(file);
-    var maxIdx, temp;
     var arrayVideos = [];
     //Armazena os nomes de todos os objetos
     for (var video in jsonData){
-        arrayVideos.push(video);
+        arrayVideos.push(jsonData[video]);
     }
-    //Algoritmo Selection Sort usado para ordenar os videos por views em ordem decrescente
-    for(var i = 0; i < arrayVideos.length; i++){
-        maxIdx = i;
-        for(var j = i+1; j< arrayVideos.length; j++){
-            if(jsonData[arrayVideos[j]].Views > jsonData[arrayVideos[maxIdx]].Views){
-                maxIdx = j;
-            }
-        }
-        temp = jsonData[arrayVideos[i]];
-        jsonData[arrayVideos[i]] = jsonData[arrayVideos[maxIdx]];
-        jsonData[arrayVideos[maxIdx]] = temp;
-    }
-    response.send(jsonData);
+    //ordena o array por ordem decrescente de views
+    arrayVideos.sort(function(a, b) {
+        return a.Views + b.Views;
+      });
+    response.send(arrayVideos);
 });
