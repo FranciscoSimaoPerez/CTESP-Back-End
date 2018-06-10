@@ -17,3 +17,79 @@
 9/5/2018 19:25:40 User  883d73e0-6c12-11e8-b2e3-efd9911da250 has connected
 9/5/2018 19:25:40 Peekaboo 883d73e0-6c12-11e8-b2e3-efd9911da250 has disconnected
 10/5/2018 15:50:21 User  9cef0910-6cbd-11e8-8370-47f25843ff81 has connected
+10/5/2018 16:16:7 User  3513ad10-6cc1-11e8-97aa-29a6baeb69fb has connected
+10/5/2018 16:16:7 <3 3513ad10-6cc1-11e8-97aa-29a6baeb69fb has disconnected
+10/5/2018 16:16:7 User  550132f0-6cc1-11e8-97aa-29a6baeb69fb has connected
+10/5/2018 16:53:26 User  6b3a08d0-6cc6-11e8-843e-0d689685313e has connected
+10/5/2018 17:13:17 User 31ba2830-6cc9-11e8-8d06-73fb568bc4aa has connected
+10/5/2018 17:14:0 User 4929c2a0-6cc9-11e8-a67c-dfd4e3bfdefe has connected
+10/5/2018 17:14:0 User4929c2a0-6cc9-11e8-a67c-dfd4e3bfdefe has disconnected
+10/5/2018 17:14:0 User 4c51b690-6cc9-11e8-a67c-dfd4e3bfdefe has connected
+10/5/2018 17:14:0 User 599e1a00-6cc9-11e8-a67c-dfd4e3bfdefe has connected
+10/5/2018 18:40:55 User 6dbb37a0-6cd5-11e8-9bc4-cddb7df97e2e has connected
+10/5/2018 18:40:55 User 6dbcbe40-6cd5-11e8-9bc4-cddb7df97e2e has connected
+10/5/2018 18:40:55 User6dbb37a0-6cd5-11e8-9bc4-cddb7df97e2e has disconnected
+10/5/2018 18:40:55 User 73d0fcb0-6cd5-11e8-9bc4-cddb7df97e2e has connected
+10/5/2018 18:40:55 User 7791ae30-6cd5-11e8-9bc4-cddb7df97e2e has connected
+10/5/2018 18:40:55 Keekaboo 7791ae30-6cd5-11e8-9bc4-cddb7df97e2e has disconnected
+10/5/2018 18:43:56 User d97de320-6cd5-11e8-86d2-595b317980d9 has connected
+10/5/2018 18:43:56 User d9a4a500-6cd5-11e8-86d2-595b317980d9 has connected
+10/5/2018 18:43:56 Keekaboo d97de320-6cd5-11e8-86d2-595b317980d9 has disconnected
+10/5/2018 18:43:56 User f29c6610-6cd5-11e8-86d2-595b317980d9 has connected
+10/5/2018 18:43:56 Keekaboo f29c6610-6cd5-11e8-86d2-595b317980d9 has disconnected
+10/5/2018 18:53:10 User 23ee7a40-6cd7-11e8-8101-51ca77720428 has connected
+10/5/2018 18:53:10 User23ee7a40-6cd7-11e8-8101-51ca77720428 has disconnected
+10/5/2018 18:53:10 User 280b0760-6cd7-11e8-8101-51ca77720428 has connected
+10/5/2018 18:53:10 xuxu 280b0760-6cd7-11e8-8101-51ca77720428 has disconnected
+10/5/2018 18:53:10 User 337bcd00-6cd7-11e8-8101-51ca77720428 has connected
+10/5/2018 18:53:10 User 3c0b92c0-6cd7-11e8-8101-51ca77720428 has connected
+10/5/2018 18:53:10 xuxu 337bcd00-6cd7-11e8-8101-51ca77720428 has disconnected
+10/5/2018 18:53:10 User a35fc090-6cd7-11e8-8101-51ca77720428 has connected
+10/5/2018 19:8:11 User 3cae7790-6cd9-11e8-a3ad-89c45f3a66d0 has connected
+10/5/2018 19:8:11 User 3cb184d0-6cd9-11e8-a3ad-89c45f3a66d0 has connected
+10/5/2018 19:8:11 Keekaboo 3cae7790-6cd9-11e8-a3ad-89c45f3a66d0 has disconnected
+10/5/2018 19:17:46 User 93b3e1f0-6cda-11e8-b769-3b8965cdde1b has connected
+10/5/2018 19:17:46 User 9800cde0-6cda-11e8-b769-3b8965cdde1b has connected
+10/5/2018 19:18:35 User b099cd20-6cda-11e8-af72-512f73e98abf has connected
+10/5/2018 19:18:35 User b1e6bf80-6cda-11e8-af72-512f73e98abf has connected
+10/5/2018 19:19:25 User ce8b0dd0-6cda-11e8-9408-6fe4d2124417 has connected
+10/5/2018 19:19:25 User ce8c1f40-6cda-11e8-9408-6fe4d2124417 has connected
+10/5/2018 19:19:25 Userce8c1f40-6cda-11e8-9408-6fe4d2124417 has disconnected
+10/5/2018 19:19:25 User d66b80c0-6cda-11e8-9408-6fe4d2124417 has connected
+10/5/2018 19:29:34 User 3921ee10-6cdc-11e8-97b1-4197d46f5d03 has connected
+10/5/2018 19:29:34 User 3922d870-6cdc-11e8-97b1-4197d46f5d03 has connected
+10/5/2018 19:29:34 User3922d870-6cdc-11e8-97b1-4197d46f5d03 has disconnected
+10/5/2018 19:29:34 User 513c6e80-6cdc-11e8-97b1-4197d46f5d03 has connected
+10/5/2018 19:34:24 User e67878e0-6cdc-11e8-a935-63fcbcba3003 has connected
+10/5/2018 19:34:24 User e67a2690-6cdc-11e8-a935-63fcbcba3003 has connected
+10/5/2018 19:34:48 User f446b680-6cdc-11e8-9e31-ad588873c3c7 has connected
+10/5/2018 19:34:48 User f4499cb0-6cdc-11e8-9e31-ad588873c3c7 has connected
+10/5/2018 19:34:48 xuxu f4499cb0-6cdc-11e8-9e31-ad588873c3c7 has disconnected
+10/5/2018 19:54:54 User c38ec2a0-6cdf-11e8-9197-e12b9dbd7bbf has connected
+10/5/2018 19:56:22 User f7f58650-6cdf-11e8-817f-039efa710800 has connected
+10/5/2018 19:56:22 User ff518700-6cdf-11e8-817f-039efa710800 has connected
+10/5/2018 19:56:22 jonas ff518700-6cdf-11e8-817f-039efa710800 has disconnected
+10/5/2018 20:1:26 User ad03c660-6ce0-11e8-9b9a-03707877b2f4 has connected
+10/5/2018 20:1:26 User b52b2d60-6ce0-11e8-9b9a-03707877b2f4 has connected
+10/5/2018 20:1:26 jonas b52b2d60-6ce0-11e8-9b9a-03707877b2f4 has disconnected
+10/5/2018 20:7:9 User 799cca00-6ce1-11e8-a236-375f04f9033c has connected
+10/5/2018 20:7:9 User799cca00-6ce1-11e8-a236-375f04f9033c has disconnected
+10/5/2018 20:7:9 User 8069d120-6ce1-11e8-a236-375f04f9033c has connected
+10/5/2018 20:7:9 User 850af790-6ce1-11e8-a236-375f04f9033c has connected
+10/5/2018 20:7:9 Keekaboo 8069d120-6ce1-11e8-a236-375f04f9033c has disconnected
+10/5/2018 20:12:35 User 3c0688b0-6ce2-11e8-bcf1-0f9ffd94e440 has connected
+10/5/2018 20:12:35 User 3f5b0ae0-6ce2-11e8-bcf1-0f9ffd94e440 has connected
+10/5/2018 20:12:35 JoanaJosefinalul 3f5b0ae0-6ce2-11e8-bcf1-0f9ffd94e440 has disconnected
+10/5/2018 20:25:33 User 0dea1cb0-6ce4-11e8-959c-117ebf14b5c8 has connected
+10/5/2018 20:25:33 User0dea1cb0-6ce4-11e8-959c-117ebf14b5c8 has disconnected
+10/5/2018 20:25:33 User 10a03c00-6ce4-11e8-959c-117ebf14b5c8 has connected
+10/5/2018 20:25:33 User10a03c00-6ce4-11e8-959c-117ebf14b5c8 has disconnected
+10/5/2018 20:25:33 User 232a7b10-6ce4-11e8-959c-117ebf14b5c8 has connected
+10/5/2018 20:26:42 User 357a4930-6ce4-11e8-8961-c119a98505a7 has connected
+10/5/2018 20:26:42 User 3654f1c0-6ce4-11e8-8961-c119a98505a7 has connected
+10/5/2018 20:26:42 User357a4930-6ce4-11e8-8961-c119a98505a7 has disconnected
+10/5/2018 20:26:42 lol 3654f1c0-6ce4-11e8-8961-c119a98505a7 has disconnected
+10/5/2018 20:26:42 User 5055e570-6ce4-11e8-8961-c119a98505a7 has connected
+10/5/2018 20:57:4 User 7247ca00-6ce8-11e8-b2ba-dbba4a56c764 has connected
+10/5/2018 20:57:4 User7247ca00-6ce8-11e8-b2ba-dbba4a56c764 has disconnected
+10/5/2018 20:57:4 User 74b28870-6ce8-11e8-b2ba-dbba4a56c764 has connected

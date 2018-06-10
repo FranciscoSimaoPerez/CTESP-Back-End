@@ -1,0 +1,14 @@
+10/5/2018 16:54:22 User  8afdbf90-6cc6-11e8-9f66-ef4cfeb967df has connected
+10/5/2018 16:54:39 User  9bd804b0-6cc6-11e8-acbf-9163734621f7 has connected
+10/5/2018 17:2:20 User aa769530-6cc7-11e8-9591-fba29707aed7 has connected
+10/5/2018 17:2:20 User b1c1cd00-6cc7-11e8-9591-fba29707aed7 has connected
+10/5/2018 17:2:20 User bbdf85c0-6cc7-11e8-9591-fba29707aed7 has connected
+10/5/2018 17:2:20 User c8acf530-6cc7-11e8-9591-fba29707aed7 has connected
+10/5/2018 17:2:20 User c8adb880-6cc7-11e8-9591-fba29707aed7 has connected
+10/5/2018 17:2:20 Useraa769530-6cc7-11e8-9591-fba29707aed7 has disconnected
+10/5/2018 17:2:20 Userb1c1cd00-6cc7-11e8-9591-fba29707aed7 has disconnected
+10/5/2018 17:2:20 User c8b05090-6cc7-11e8-9591-fba29707aed7 has connected
+10/5/2018 17:2:20 User c8b1fe40-6cc7-11e8-9591-fba29707aed7 has connected
+10/5/2018 17:2:20 User c8b46f40-6cc7-11e8-9591-fba29707aed7 has connected
+10/5/2018 17:2:20 Userbbdf85c0-6cc7-11e8-9591-fba29707aed7 has disconnected
+10/5/2018 17:2:20 Userc8acf530-6cc7-11e8-9591-fba29707aed7 has disconnected

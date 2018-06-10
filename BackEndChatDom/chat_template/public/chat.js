@@ -10,6 +10,8 @@ $(function () {
     var send_message = $("#send_message")
     var chatroom = $("#chatroom")
     var feedback = $("#feedback")
+    var list = $("#list")
+    var online_list = $("online_list")
     var date = new Date()
 
     send_message.click(function () {
@@ -28,20 +30,22 @@ $(function () {
     socket.on("new_username", (data) => {
         feedback.html('');
         message.val('');
-        chatroom.append(date.getDate()+"/"+ date.getMonth()+"/"+date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " - " + data.message)
+        chatroom.append("<p class='alert'>" +date.getDate()+"/"+ date.getMonth()+"/"+date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " - " + data.message + "</p>")
     })
 
 
     socket.on("new_connection", (data) => {
         feedback.html('');
+        list.html('');
         message.val('');
-        chatroom.append(date.getDate()+"/"+ date.getMonth()+"/"+date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " - " +  data.message)
+        online_list.append("<p class='alert'>" + data.username + "</p>")
+        chatroom.append("<p class='alert'>" +date.getDate()+"/"+ date.getMonth()+"/"+date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " - " +  data.message + "</p>")
     })
 
     socket.on("new_disconnect", (data) => {
         feedback.html('');
         message.val('');
-        chatroom.append(date.getDate()+"/"+ date.getMonth()+"/"+date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " - " +  data.message)
+        chatroom.append("<p class='alert'>" +date.getDate()+"/"+ date.getMonth()+"/"+date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " - " +  data.message + "</p>")
     })  
 
 });
