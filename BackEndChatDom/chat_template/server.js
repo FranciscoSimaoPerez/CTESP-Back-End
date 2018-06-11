@@ -36,13 +36,14 @@ io.on('connection', function (socket) {
 
 
     //default username
-        io.sockets.emit('new_connection', { message: socket.username + socket.id + " has joined the room " + "<br>"});
+        io.sockets.emit('new_connection', { message: socket.username +" "+ socket.id + " has joined the room " + "<br>"});
         var user = { id:socket.id, username: socket.username};
         onlineUsers.push(user);
+        io.sockets.emit('online_users', onlineUsers);
         console.log(onlineUsers);
         socket.on('new_username', (data) => {
             //broadcast the new message
-            io.sockets.emit('new_username', { message: socket.username + socket.id + " has changed his username to " + data.username });
+            io.sockets.emit('new_username', { message: socket.username +" "+ socket.id + " has changed his username to " + data.username });
             socket.username = data.username + " ";
             for(i = 0; i < onlineUsers.length; i++) {
                 if (socket.id == onlineUsers[i].id){
@@ -50,6 +51,7 @@ io.on('connection', function (socket) {
                     console.log(onlineUsers);
                 }    
             }
+            io.sockets.emit('online_users', onlineUsers);
         })
          
  
@@ -73,6 +75,7 @@ io.on('connection', function (socket) {
         for(i = 0; i < onlineUsers.length; i++) {
             if (socket.id == onlineUsers[i].id){
                 onlineUsers.splice(i,1);
+                io.sockets.emit('online_users', onlineUsers);
                 console.log(onlineUsers);
             }    
         }

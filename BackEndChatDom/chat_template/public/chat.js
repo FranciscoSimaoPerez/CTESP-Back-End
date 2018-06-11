@@ -11,7 +11,7 @@ $(function () {
     var chatroom = $("#chatroom")
     var feedback = $("#feedback")
     var list = $("#list")
-    var online_list = $("online_list")
+    var online_users = $("#online_users")
     var date = new Date()
 
     send_message.click(function () {
@@ -36,9 +36,7 @@ $(function () {
 
     socket.on("new_connection", (data) => {
         feedback.html('');
-        list.html('');
         message.val('');
-        online_list.append("<p class='alert'>" + data.username + "</p>")
         chatroom.append("<p class='alert'>" +date.getDate()+"/"+ date.getMonth()+"/"+date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " - " +  data.message + "</p>")
     })
 
@@ -46,6 +44,14 @@ $(function () {
         feedback.html('');
         message.val('');
         chatroom.append("<p class='alert'>" +date.getDate()+"/"+ date.getMonth()+"/"+date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " - " +  data.message + "</p>")
-    })  
+    }) 
+    
+    socket.on("online_users", (data) => {
+        var user = "";
+        for(i = 0; i < data.length; i++){
+            user += "<p>" + data[i].username + "<p>";
+            online_users.html(user);
+        }
+    })
 
 });
