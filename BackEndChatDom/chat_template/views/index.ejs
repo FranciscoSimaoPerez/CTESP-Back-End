@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+    <script src="/socket.io/socket.io.js"></script>
+    <title> Team Keekaboo Chat </title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="content">
+        <header>
+          <h1> Team Keekaboo Chat </h1>
+        </header>
+
+        <section id="chatroom">
+          <section id="feedback"></section>
+        </section>
+
+        <section id="list">
+          <h3>Online Users</h3>
+          <section class="online_users" id="online_users"></section>
+        </section>
+        
+
+        <section id="input_zone"> 
+          <input id="username" class="vertical-align" type="text" />
+          <button id="new_username" class="vertical-align" type="button">Change Username</button>
+        </section>
+
+        <section id="input_zone"> 
+          <input id="message" class="vertical-align" type="text" />
+          <button id="send_message" class="vertical-align" type="button">Send Message</button>
+        </section>
+
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="chat.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  .content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; 
+  }
+  .online_users{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+</style>
