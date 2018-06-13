@@ -538,3 +538,135 @@
 12/5/2018 22:40:49 User4f483fb0-6e89-11e8-a9a8-d10a07e4c5468TCHZKULvt9z3gj0AAAl has disconnected
 12/5/2018 22:41:20 User5aa3cfa0-6e89-11e8-a31c-4b92bfd01080 ntXof9urHGU-Oou-AAAA has connected
 12/5/2018 22:42:15 User79b3edd0-6e89-11e8-b1de-834c865f9b60 F8pPFAlf5A9UEatWAAAA has connected
+12/5/2018 23:0:19 User01ae7f50-6e8c-11e8-99c9-0d727d701d26 4tkq8ugZREYpvvZ6AAAA has connected
+12/5/2018 23:3:0 User5f04ff80-6e8c-11e8-bcc7-2b963602c3d8 deWKKtIMB4f58dkLAAAA has connected
+12/5/2018 23:3:1 User5f04ff80-6e8c-11e8-bcc7-2b963602c3d8deWKKtIMB4f58dkLAAAA has disconnected
+12/5/2018 23:3:4 User61b57980-6e8c-11e8-bcc7-2b963602c3d8 owLEIAZkTOEVNUJjAAAB has connected
+12/5/2018 23:7:28 dasdaowLEIAZkTOEVNUJjAAAB has disconnected
+12/5/2018 23:8:24 User1fef2310-6e8d-11e8-b7b6-d7f75dfa2107 eY4YvYU2nR6kVbpsAAAA has connected
+12/5/2018 23:8:50 sadeY4YvYU2nR6kVbpsAAAA has disconnected
+12/5/2018 23:8:51 User303b31f0-6e8d-11e8-b7b6-d7f75dfa2107 6QqmROOR2f6JYxIWAAAB has connected
+12/5/2018 23:9:0 User303b31f0-6e8d-11e8-b7b6-d7f75dfa21076QqmROOR2f6JYxIWAAAB has disconnected
+12/5/2018 23:9:1 User364c8a30-6e8d-11e8-b7b6-d7f75dfa2107 AO3p3ZPveFd5vBQ8AAAC has connected
+12/5/2018 23:12:19 Userac2bdd00-6e8d-11e8-9aba-f73012c7c1b6 l5jCwM5t83nl_uADAAAA has connected
+12/5/2018 23:13:38 Userdbb70950-6e8d-11e8-b148-b7214c70b634 Vsm2dk491CqnmbFmAAAA has connected
+12/5/2018 23:13:38 Userdbb70950-6e8d-11e8-b148-b7214c70b634Vsm2dk491CqnmbFmAAAA has disconnected
+12/5/2018 23:13:49 Usere4995be0-6e8d-11e8-8e0c-43ea6d7b7b91 b-D8VU_QhXqHhej6AAAA has connected
+13/5/2018 0:7:11 User569ef2c0-6e95-11e8-be67-e1bc76cbcf53 yeJtkD-7pMGDiRwZAAAA has connected
+13/5/2018 0:7:11 User569ef2c0-6e95-11e8-be67-e1bc76cbcf53yeJtkD-7pMGDiRwZAAAA has disconnected
+13/5/2018 0:7:22 User615ff060-6e95-11e8-883f-bd35ca5ffaf2 gmKNAiBy2twZx7i3AAAA has connected
+13/5/2018 0:7:59 User73567af0-6e95-11e8-a074-4bd613174b79 O01YfyVG1Yhn84xJAAAA has connected
+13/5/2018 0:14:25 User594f2930-6e96-11e8-a1d1-1d57f74edfc5 g93wUe6Y2j9ml1lKAAAA has connected
+13/5/2018 0:14:25 User5951c140-6e96-11e8-a1d1-1d57f74edfc5 KDN74U6I1zY7-KChAAAB has connected
+13/5/2018 0:14:25 User59528490-6e96-11e8-a1d1-1d57f74edfc5 sO4h-cjz8Pp1rIIVAAAC has connected
+13/5/2018 0:14:25 User59536ef0-6e96-11e8-a1d1-1d57f74edfc5 1rnL7uhusGoJDbDvAAAD has connected
+13/5/2018 0:14:25 User595591d0-6e96-11e8-a1d1-1d57f74edfc5 p_DDzbA99qtZiK0gAAAE has connected
+13/5/2018 0:14:25 User59567c30-6e96-11e8-a1d1-1d57f74edfc5 C32GOXa6CVoDKYOdAAAF has connected
+13/5/2018 0:14:25 User5957b4b0-6e96-11e8-a1d1-1d57f74edfc5 PNSXtY-YtV4jreaVAAAG has connected
+13/5/2018 0:14:25 User5958c620-6e96-11e8-a1d1-1d57f74edfc5 JSv1-Dt7nNJGW6saAAAH has connected
+13/5/2018 0:14:25 User595a25b0-6e96-11e8-a1d1-1d57f74edfc5 5Nfg12t5qr193ZvsAAAI has connected
+13/5/2018 0:14:25 User595b3720-6e96-11e8-a1d1-1d57f74edfc5 49USqjFzYIVyCJJlAAAJ has connected
+13/5/2018 0:14:25 User595cbdc0-6e96-11e8-a1d1-1d57f74edfc5 xMFUdCH4TjAf4pWEAAAK has connected
+13/5/2018 0:14:25 User595b3720-6e96-11e8-a1d1-1d57f74edfc549USqjFzYIVyCJJlAAAJ has disconnected
+13/5/2018 0:14:25 User5dd378d0-6e96-11e8-a1d1-1d57f74edfc5 sWFj4a7zQDukfhE-AAAL has connected
+13/5/2018 0:14:25 User5dd378d0-6e96-11e8-a1d1-1d57f74edfc5sWFj4a7zQDukfhE-AAAL has disconnected
+13/5/2018 0:14:43 User665a64f0-6e96-11e8-9ece-c1d5d93f9943 k9SwtzsvCG7jJfZUAAAA has connected
+13/5/2018 0:14:43 User71ccd840-6e96-11e8-9ece-c1d5d93f9943 326NwbZ1cc5T-X9BAAAB has connected
+13/5/2018 0:45:32 Userb2350c00-6e9a-11e8-ac22-13e41d57da77 uuvc-xxougfBYGPSAAAA has connected
+13/5/2018 0:45:32 Userb237cb20-6e9a-11e8-ac22-13e41d57da77 DOlwWisQTpUy35DfAAAB has connected
+13/5/2018 0:45:32 Userb2350c00-6e9a-11e8-ac22-13e41d57da77uuvc-xxougfBYGPSAAAA has disconnected
+13/5/2018 0:45:32 Userb237cb20-6e9a-11e8-ac22-13e41d57da77DOlwWisQTpUy35DfAAAB has disconnected
+13/5/2018 0:45:46 Userc7fc2690-6e9a-11e8-8f33-2b06923a800e 19QGCge7xgAReZEdAAAA has connected
+13/5/2018 0:55:0 User0476fae0-6e9c-11e8-9ea5-4326fe0b5791 cTxph7Nvemk4QGr6AAAA has connected
+13/5/2018 0:55:0 User0476fae0-6e9c-11e8-9ea5-4326fe0b5791cTxph7Nvemk4QGr6AAAA has disconnected
+13/5/2018 0:55:34 User1b92f710-6e9c-11e8-914b-67239aaa5591 obEUXvSN5orxwlOcAAAA has connected
+13/5/2018 1:11:36 User57aaa750-6e9e-11e8-8393-05b71b1b71c4 M5qxd_YE_u2r1kocAAAA has connected
+13/5/2018 1:32:31 User421284a0-6ea1-11e8-8e33-053297e03d0f ielOpF8-f0hvWPIhAAAA has connected
+13/5/2018 1:32:31 User421284a0-6ea1-11e8-8e33-053297e03d0fielOpF8-f0hvWPIhAAAA has disconnected
+13/5/2018 1:32:31 User463f3e60-6ea1-11e8-8e33-053297e03d0f HJc9reIv_t5mkWl2AAAB has connected
+13/5/2018 1:42:5 User9aec87f0-6ea2-11e8-8837-15eecdb17b52 JrBlmJ1lj7rEMSsIAAAA has connected
+13/5/2018 1:42:5 User9aec87f0-6ea2-11e8-8837-15eecdb17b52JrBlmJ1lj7rEMSsIAAAA has disconnected
+13/5/2018 1:42:5 User9e7c3e60-6ea2-11e8-8837-15eecdb17b52 VnfiWpHB9xxgV85VAAAB has connected
+13/5/2018 1:42:49 Userb36e2ea0-6ea2-11e8-b6c1-ebaf13d6bb45 bgkGhf6sxMpziXpVAAAA has connected
+13/5/2018 1:43:16 Userc2f3b930-6ea2-11e8-b3b1-69beb4c4d3ad 3qzUcHf6g2N3gnX2AAAA has connected
+13/5/2018 1:43:16 Userc2f3b930-6ea2-11e8-b3b1-69beb4c4d3ad3qzUcHf6g2N3gnX2AAAA has disconnected
+13/5/2018 1:43:16 Userc54152b0-6ea2-11e8-b3b1-69beb4c4d3ad uIFnsqkJX2Yt4nw0AAAB has connected
+13/5/2018 1:48:10 User71ea5f70-6ea3-11e8-9c98-b760363f3ddc M7LURmB4QAyxvAXXAAAA has connected
+13/5/2018 1:48:10 User71ea5f70-6ea3-11e8-9c98-b760363f3ddcM7LURmB4QAyxvAXXAAAA has disconnected
+13/5/2018 1:48:10 User77835360-6ea3-11e8-9c98-b760363f3ddc -oCyyJ70RG59jPtgAAAB has connected
+13/5/2018 1:48:44 User85fe4bc0-6ea3-11e8-ac13-43f04349186a EUmxRuhxsbGVAK2MAAAA has connected
+13/5/2018 1:48:44 User85fe4bc0-6ea3-11e8-ac13-43f04349186aEUmxRuhxsbGVAK2MAAAA has disconnected
+13/5/2018 1:48:44 User88b6dc10-6ea3-11e8-ac13-43f04349186a n6zHyCUp-5KnDu-EAAAB has connected
+13/5/2018 1:48:44 User88b6dc10-6ea3-11e8-ac13-43f04349186an6zHyCUp-5KnDu-EAAAB has disconnected
+13/5/2018 1:48:59 User980291f0-6ea3-11e8-b21f-6f1a4c402416 4kt1f0uTkaoOOSx2AAAA has connected
+13/5/2018 1:48:59 User980291f0-6ea3-11e8-b21f-6f1a4c4024164kt1f0uTkaoOOSx2AAAA has disconnected
+13/5/2018 1:48:59 Userbba22350-6ea3-11e8-b21f-6f1a4c402416 wJZ7EDl2vAlfTmw0AAAB has connected
+13/5/2018 1:50:23 Userc14ec650-6ea3-11e8-8fac-116183090688 aPSt53FzKKTr4YrVAAAA has connected
+13/5/2018 1:50:23 Userc14ec650-6ea3-11e8-8fac-116183090688aPSt53FzKKTr4YrVAAAA has disconnected
+13/5/2018 1:50:23 Userc59aa0d0-6ea3-11e8-8fac-116183090688 nNOsGQz_5pClAQzXAAAB has connected
+13/5/2018 1:51:0 Userd73e9e90-6ea3-11e8-8f3b-a1c436a2b1ef Hh4LX0lYbY5GmtqrAAAA has connected
+13/5/2018 1:51:0 Userd73e9e90-6ea3-11e8-8f3b-a1c436a2b1efHh4LX0lYbY5GmtqrAAAA has disconnected
+13/5/2018 1:51:0 Userd8f72400-6ea3-11e8-8f3b-a1c436a2b1ef WgsS8RRS8-zmyihUAAAB has connected
+13/5/2018 1:51:24 Usere5605360-6ea3-11e8-a929-a13a62ed19ec cL1vFkFFa_GI48XsAAAA has connected
+13/5/2018 1:53:2 User225926c0-6ea4-11e8-9f9f-b5821110ccac e1p04s_l4WaUM3ddAAAA has connected
+13/5/2018 1:53:2 User8f966450-6ea4-11e8-9f9f-b5821110ccac 4M43cDMDhHJBt8tbAAAB has connected
+13/5/2018 1:53:2 joaoe1p04s_l4WaUM3ddAAAA has disconnected
+13/5/2018 1:53:2 User9ec51c50-6ea4-11e8-9f9f-b5821110ccac EWlatYsRBZKZq0-XAAAC has connected
+13/5/2018 1:53:2 joao4M43cDMDhHJBt8tbAAAB has disconnected
+13/5/2018 1:53:2 joaoasdasEWlatYsRBZKZq0-XAAAC has disconnected
+13/5/2018 1:53:2 Userc832bb60-6ea4-11e8-9f9f-b5821110ccac 5wKZ3ArRd2l8cmDLAAAD has connected
+13/5/2018 1:53:2 Joao5wKZ3ArRd2l8cmDLAAAD has disconnected
+13/5/2018 1:53:2 Userce3594b0-6ea4-11e8-9f9f-b5821110ccac UtzoDBtdZ2ZixomAAAAE has connected
+13/5/2018 1:53:2 Userd5284c40-6ea4-11e8-9f9f-b5821110ccac 647e-oM75a0ZUPpMAAAF has connected
+13/5/2018 1:59:57 User177198e0-6ea5-11e8-98ce-73d175a2760d jhJufYpWem_p23myAAAA has connected
+13/5/2018 1:59:57 User177198e0-6ea5-11e8-98ce-73d175a2760djhJufYpWem_p23myAAAA has disconnected
+13/5/2018 2:0:6 User1fda4ea0-6ea5-11e8-8911-b5038895ea0f o38dUKCb87Um1uD7AAAA has connected
+13/5/2018 2:0:6 User24978890-6ea5-11e8-8911-b5038895ea0f cnsk93pLB_E_fAJVAAAB has connected
+13/5/2018 2:2:20 User6c675290-6ea5-11e8-aa53-a762a40bd09b 3S1TmxfmhP6k3Wa5AAAA has connected
+13/5/2018 2:2:20 User6c69c390-6ea5-11e8-aa53-a762a40bd09b X6XVaTOeq2tXLWQaAAAB has connected
+13/5/2018 2:2:49 User7e265260-6ea5-11e8-897d-15c825b92f03 FTa1uDfdfxg5cXYUAAAA has connected
+13/5/2018 2:2:49 User7e293890-6ea5-11e8-897d-15c825b92f03 doElIWCuVRdH_aHqAAAB has connected
+13/5/2018 2:2:49 User7e265260-6ea5-11e8-897d-15c825b92f03FTa1uDfdfxg5cXYUAAAA has disconnected
+13/5/2018 2:2:49 User959e0320-6ea5-11e8-897d-15c825b92f03 JlQTfx5MERkv6YNxAAAC has connected
+13/5/2018 2:2:49 User959e0320-6ea5-11e8-897d-15c825b92f03JlQTfx5MERkv6YNxAAAC has disconnected
+13/5/2018 2:2:49 JosefinadoElIWCuVRdH_aHqAAAB has disconnected
+13/5/2018 2:2:49 User98a26980-6ea5-11e8-897d-15c825b92f03 o4jRp1uq3p4y3fUkAAAD has connected
+13/5/2018 2:2:49 User99c0f8e0-6ea5-11e8-897d-15c825b92f03 VBXOd6gDABfA5Q8tAAAE has connected
+13/5/2018 2:4:12 Useraf2532f0-6ea5-11e8-99f4-e700b47e79ac z6-DBE67r5qisddLAAAA has connected
+13/5/2018 2:4:12 Useraf281920-6ea5-11e8-99f4-e700b47e79ac ddjViLn2FrCWXokRAAAB has connected
+13/5/2018 2:4:12 Useraf2532f0-6ea5-11e8-99f4-e700b47e79acz6-DBE67r5qisddLAAAA has disconnected
+13/5/2018 2:4:12 Useraf281920-6ea5-11e8-99f4-e700b47e79acddjViLn2FrCWXokRAAAB has disconnected
+13/5/2018 2:4:12 Userb55eaca0-6ea5-11e8-99f4-e700b47e79ac jKWfHmnZuUdcfkS1AAAC has connected
+13/5/2018 2:4:12 Userb8f19760-6ea5-11e8-99f4-e700b47e79ac WNo_jH__Quy05eCQAAAD has connected
+13/5/2018 2:4:12 asdajKWfHmnZuUdcfkS1AAAC has disconnected
+13/5/2018 2:4:12 Userca74c6b0-6ea5-11e8-99f4-e700b47e79ac XgsoqfBlJZRwPEm-AAAE has connected
+13/5/2018 2:4:12 dasdWNo_jH__Quy05eCQAAAD has disconnected
+13/5/2018 2:4:12 Usercdc37c80-6ea5-11e8-99f4-e700b47e79ac yXdjMjy4Vki8wL3qAAAF has connected
+13/5/2018 2:5:36 Usere13d99d0-6ea5-11e8-9c3b-91ab377c90bd kyFyyu3dR2xU9xwvAAAA has connected
+13/5/2018 2:5:36 Usere13d99d0-6ea5-11e8-9c3b-91ab377c90bdkyFyyu3dR2xU9xwvAAAA has disconnected
+13/5/2018 2:5:36 Usere4d53f80-6ea5-11e8-9c3b-91ab377c90bd MwcoVCerELuthKGQAAAB has connected
+13/5/2018 2:5:36 Usere7851d40-6ea5-11e8-9c3b-91ab377c90bd kvN6e3j07qSaSKOpAAAC has connected
+13/5/2018 2:7:2 User14b40a10-6ea6-11e8-868d-818f1130735c 5UabEL6v09H85B5RAAAA has connected
+13/5/2018 2:7:2 User14b76570-6ea6-11e8-868d-818f1130735c TBvExsYEZ8RgnaujAAAB has connected
+13/5/2018 2:7:2 User14b76570-6ea6-11e8-868d-818f1130735cTBvExsYEZ8RgnaujAAAB has disconnected
+13/5/2018 2:7:2 User14b40a10-6ea6-11e8-868d-818f1130735c5UabEL6v09H85B5RAAAA has disconnected
+13/5/2018 2:7:12 User1cd640f0-6ea6-11e8-8a6b-9b89be0f0f8c wowFk3zPFrgOysZPAAAA has connected
+13/5/2018 2:7:12 User1e6f7e90-6ea6-11e8-8a6b-9b89be0f0f8c zUEKtZkBOQ72DFSMAAAB has connected
+13/5/2018 2:7:12 User1cd640f0-6ea6-11e8-8a6b-9b89be0f0f8cwowFk3zPFrgOysZPAAAA has disconnected
+13/5/2018 2:7:12 lkyfdzUEKtZkBOQ72DFSMAAAB has disconnected
+13/5/2018 2:7:55 User39b3c7b0-6ea6-11e8-aa0f-2b852aedae27 6Krqm5FwiXuThxW_AAAA has connected
+13/5/2018 2:7:55 User3ae98890-6ea6-11e8-aa0f-2b852aedae27 GCzrmZebST0VT3M6AAAB has connected
+13/5/2018 2:7:55 jjhgfdGCzrmZebST0VT3M6AAAB has disconnected
+13/5/2018 2:7:55 User39b3c7b0-6ea6-11e8-aa0f-2b852aedae276Krqm5FwiXuThxW_AAAA has disconnected
+13/5/2018 2:10:10 User884d1660-6ea6-11e8-b258-eb30bdf21180 BH7MucsiBUfx-FCcAAAA has connected
+13/5/2018 2:10:10 User895dea20-6ea6-11e8-b258-eb30bdf21180 bMJUh9_VMc5lsc-lAAAB has connected
+13/5/2018 2:10:10 User884d1660-6ea6-11e8-b258-eb30bdf21180BH7MucsiBUfx-FCcAAAA has disconnected
+13/5/2018 2:10:10 jhhgffbMJUh9_VMc5lsc-lAAAB has disconnected
+13/5/2018 2:38:34 User7f235dc0-6eaa-11e8-81f5-639ac9bad038 pMXokTWfdK1_nlGPAAAA has connected
+13/5/2018 2:39:31 Usera15cf680-6eaa-11e8-be0c-81e1b33f42d3 2cuiJbdPt7IaweapAAAA has connected
+13/5/2018 2:39:31 Usera3340070-6eaa-11e8-be0c-81e1b33f42d3 tyj2QSr3Ic2N_T21AAAB has connected
+13/5/2018 2:39:31 Usera3340070-6eaa-11e8-be0c-81e1b33f42d3tyj2QSr3Ic2N_T21AAAB has disconnected
+13/5/2018 2:39:52 Useraef2bf00-6eaa-11e8-9c5d-7fc15d38d905 zqPRJx0DjeJg9bVBAAAA has connected
+13/5/2018 2:39:52 Userb082fbf0-6eaa-11e8-9c5d-7fc15d38d905 jPzThHp2VzxOLJ47AAAB has connected
+13/5/2018 2:54:38 Usercbfd1030-6eac-11e8-a7f0-93ec7b1df44e cRlr1xRCnzsqOohVAAAA has connected
+13/5/2018 2:54:38 Usercdeaaf60-6eac-11e8-a7f0-93ec7b1df44e 3BVZ8xStEr3IG2PRAAAB has connected

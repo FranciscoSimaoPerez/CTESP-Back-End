@@ -44,17 +44,31 @@ io.on('connection', function (socket) {
     console.log(onlineUsers);
     socket.on('new_username', (data) => {
         //broadcast the new message
-        io.sockets.emit('new_username', { message: socket.username + " " + socket.id + " has changed his username to " + data.username });
+        
         delete utilizadores[socket.username];
-        socket.username = data.username;
-        for (i = 0; i < onlineUsers.length; i++) {
-            if (socket.id == onlineUsers[i].id) {
-                onlineUsers[i].username = socket.username;
-                console.log(onlineUsers);
-                utilizadores[socket.username] = socket.id;
+        var exist = false;
+        for (var x = 0; x < onlineUsers.length; x++){
+            if(onlineUsers[x].username == data.username){
+                exist = true;
             }
         }
-        io.sockets.emit('online_users', onlineUsers);
+        if (exist == true){
+            io.sockets.connected[socket.id].emit('new_message', { message: "Username já existe", username: socket.username });
+        }
+        else {
+            oldUsername = socket.username
+            socket.username = data.username;
+            for (i = 0; i < onlineUsers.length; i++) {
+                if (socket.id == onlineUsers[i].id) {
+                    onlineUsers[i].username = socket.username;
+                    console.log(onlineUsers);
+                    utilizadores[socket.username] = socket.id;
+                }
+            }
+            io.sockets.emit('new_username', { message: oldUsername + " " + socket.id + " has changed his username to " + data.username });
+            io.sockets.emit('online_users', onlineUsers);
+        }
+        
     })
 
 
@@ -64,31 +78,36 @@ io.on('connection', function (socket) {
         if (err) throw err;
             // console.log('The file has been saved!');
         });
-        if (data.message[0] == "/" && data.message[1] == "w") {
-            var idsend = 0;
-            var texto = data.message.split(" ", 2);
-            for (var i in utilizadores) {
-                if (i == texto[1]) {
-                    idsend = utilizadores[i];
-                }
-            }
-            var userWhisper = texto[1];
-            var textof = data.message.replace("/w " + texto[1], "");
-            if (userWhisper == socket.username){
-                io.sockets.connected[socket.id].emit('new_message', { message: "Não é possível mandar mensagem a si próprio!", username: socket.username });
-            } 
-            else {
-                if (idsend == 0) {
-                    io.sockets.connected[socket.id].emit('new_message', { message: "User nao encontrado", username: socket.username });
-                    }
-                else {
-                    io.sockets.connected[idsend].emit('new_message', { message: textof, username: socket.username });
-                }
-            }
-            
+        if(data.message==""){
+            io.sockets.connected[socket.id].emit('new_message', { message: "Não é possível mandar mensagen vazias!", username: socket.username });
         }
-        else
-            io.sockets.emit('new_message', { message: data.message, username: socket.username });
+        else {
+            if (data.message[0] == "/" && data.message[1] == "w") {
+                var idsend = 0;
+                var texto = data.message.split(" ", 2);
+                for (var i in utilizadores) {
+                    if (i == texto[1]) {
+                        idsend = utilizadores[i];
+                    }
+                }
+                
+                var userWhisper = texto[1];
+                var textof = data.message.replace("/w " + texto[1], "");
+                if (userWhisper == socket.username){
+                    io.sockets.connected[socket.id].emit('new_message', { message: "Não é possível mandar mensagem a si próprio!", username: socket.username });
+                } 
+                else {
+                    if (idsend == 0) {
+                        io.sockets.connected[socket.id].emit('new_message', { message: "User nao encontrado", username: socket.username });
+                    }
+                    else {
+                        io.sockets.connected[idsend].emit('new_message', { message: textof, username: socket.username });
+                    }
+                }
+            }
+            else
+                io.sockets.emit('new_message', { message: data.message, username: socket.username });
+        }
     })
 
     socket.on('disconnect', function () {
