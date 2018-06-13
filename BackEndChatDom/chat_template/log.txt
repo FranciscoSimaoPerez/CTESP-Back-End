@@ -670,3 +670,7 @@
 13/5/2018 2:39:52 Userb082fbf0-6eaa-11e8-9c5d-7fc15d38d905 jPzThHp2VzxOLJ47AAAB has connected
 13/5/2018 2:54:38 Usercbfd1030-6eac-11e8-a7f0-93ec7b1df44e cRlr1xRCnzsqOohVAAAA has connected
 13/5/2018 2:54:38 Usercdeaaf60-6eac-11e8-a7f0-93ec7b1df44e 3BVZ8xStEr3IG2PRAAAB has connected
+13/5/2018 3:12:50 User47e062e0-6eaf-11e8-b6c3-31b14deb1f21 Na7cErIOnRUrXaBpAAAA has connected
+13/5/2018 3:12:50 User47ec49c0-6eaf-11e8-b6c3-31b14deb1f21 nz5nVXnl1rXjiVsIAAAB has connected
+13/5/2018 3:12:50 User47ec49c0-6eaf-11e8-b6c3-31b14deb1f21nz5nVXnl1rXjiVsIAAAB has disconnected
+13/5/2018 3:12:50 User744ee5e0-6eaf-11e8-b6c3-31b14deb1f21 fhlFgjqMUPdvN1cOAAAC has connected

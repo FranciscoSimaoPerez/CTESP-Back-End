@@ -53,7 +53,7 @@ $(function () {
         var user = "";
         for(i = 0; i < data.length; i++){
             whispername = data[i].username;
-            user += "<p> <button onclick=mostraUsername(user)>" + data[i].username + "</button> </p>";
+            user += "<p> <button onclick=mostraUsername(whispername)>" + data[i].username + "</button> </p>";
             online_users.html(user);
         }
     })
