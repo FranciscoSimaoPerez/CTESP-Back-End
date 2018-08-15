@@ -674,3 +674,24 @@
 13/5/2018 3:12:50 User47ec49c0-6eaf-11e8-b6c3-31b14deb1f21 nz5nVXnl1rXjiVsIAAAB has connected
 13/5/2018 3:12:50 User47ec49c0-6eaf-11e8-b6c3-31b14deb1f21nz5nVXnl1rXjiVsIAAAB has disconnected
 13/5/2018 3:12:50 User744ee5e0-6eaf-11e8-b6c3-31b14deb1f21 fhlFgjqMUPdvN1cOAAAC has connected
+13/5/2018 3:15:49 Userb0a0cae0-6eaf-11e8-8a17-69d8f23633cc OrqhwUyGEMVT9ZhHAAAA has connected
+13/5/2018 3:15:49 Userb0a3b110-6eaf-11e8-8a17-69d8f23633cc 7ec6lQdHdT81pLNyAAAB has connected
+13/5/2018 3:15:49 Userb0a0cae0-6eaf-11e8-8a17-69d8f23633ccOrqhwUyGEMVT9ZhHAAAA has disconnected
+13/5/2018 3:15:49 Userb0a3b110-6eaf-11e8-8a17-69d8f23633cc7ec6lQdHdT81pLNyAAAB has disconnected
+13/5/2018 3:16:8 Userc3393ac0-6eaf-11e8-a1d0-c941af4462c9 je_wZ2nHfWo2y-dVAAAA has connected
+13/5/2018 3:16:8 Userc57a7830-6eaf-11e8-a1d0-c941af4462c9 QDOG8yON0Y3HvZ7YAAAB has connected
+13/5/2018 17:17:3 User3b4c0130-6f25-11e8-9f16-2519571710d5 LpCTeznsamtkl8AnAAAA has connected
+13/5/2018 17:17:3 User1abe4e40-6f26-11e8-9f16-2519571710d5 pD1GH38htcW7r4-LAAAB has connected
+13/5/2018 17:17:3 joaoLpCTeznsamtkl8AnAAAA has disconnected
+13/5/2018 17:17:3 User28aff260-6f26-11e8-9f16-2519571710d5 CstOm4GAi1Q-17BQAAAC has connected
+13/5/2018 17:17:3 User28aff260-6f26-11e8-9f16-2519571710d5CstOm4GAi1Q-17BQAAAC has disconnected
+13/5/2018 17:17:3 User1abe4e40-6f26-11e8-9f16-2519571710d5pD1GH38htcW7r4-LAAAB has disconnected
+13/5/2018 17:17:3 User3913f610-6f26-11e8-9f16-2519571710d5 7HaMvtEeP5BqgP8HAAAD has connected
+13/5/2018 17:17:3 User82770a40-6f26-11e8-9f16-2519571710d5 fldGESOUTHXO3ee5AAAE has connected
+13/5/2018 17:17:3 Userb8b9b9e0-6f26-11e8-9f16-2519571710d5 3mDIUdHcwWLMSwnhAAAF has connected
+13/5/2018 17:17:3 joao3mDIUdHcwWLMSwnhAAAF has disconnected
+13/5/2018 17:17:3 dadafldGESOUTHXO3ee5AAAE has disconnected
+13/5/2018 17:17:3 qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq7HaMvtEeP5BqgP8HAAAD has disconnected
+13/5/2018 17:17:3 User9e282220-6f2a-11e8-9f16-2519571710d5 ep19AIWplDDRBhzTAAAG has connected
+13/5/2018 17:17:3 User9e290c80-6f2a-11e8-9f16-2519571710d5 W4Bi9m_1P_SKpH8UAAAH has connected
+13/5/2018 17:17:3 User9e29a8c0-6f2a-11e8-9f16-2519571710d5 G-1dcjVGIcFuQdy9AAAI has connected
